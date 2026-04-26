@@ -1,0 +1,28 @@
+{
+  "name": "@featurectrl/cli",
+  "version": "0.0.1",
+  "description": "featurectrl command line tool",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "featurectrl": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup && chmod +x dist/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "biome check .",
+    "format": "biome check --write ."
+  },
+  "dependencies": {
+    "@featurectrl/config": "workspace:*",
+    "jiti": "^2.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

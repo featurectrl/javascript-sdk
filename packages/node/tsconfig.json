@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "lib": ["ES2020"],
+    "types": ["bun", "node"]
+  },
+  "include": ["src/**/*", "test/**/*"]
+}

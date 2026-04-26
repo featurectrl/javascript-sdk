@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>featurectrl example</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <main class="min-h-screen flex flex-col items-center justify-center gap-12 px-6">
+      <img src="/logo.svg" alt="featurectrl" class="h-16 w-auto select-none" />
+
+      <div class="w-full max-w-sm flex flex-col gap-4">
+          <section
+            class="w-full rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm"
+            aria-live="polite"
+          >
+            <div class="flex items-center gap-3">
+              <span
+                id="indicator"
+                class="inline-block h-3 w-3 rounded-full bg-slate-300 ring-4 ring-slate-300/20 transition-colors"
+                aria-hidden="true"
+              ></span>
+              <div class="flex-1 min-w-0">
+                <p class="font-mono text-sm font-medium text-slate-900 truncate">new-checkout</p>
+                <p id="status" class="text-xs text-slate-500">loading…</p>
+              </div>
+              <span
+                id="state"
+                class="text-xs font-medium uppercase tracking-wide text-slate-400"
+              >—</span>
+            </div>
+          </section>
+
+          <button
+            id="refresh"
+            type="button"
+            class="text-xs font-medium text-slate-500 hover:text-slate-900 underline underline-offset-4 decoration-slate-300 hover:decoration-slate-900 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Refresh
+          </button>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

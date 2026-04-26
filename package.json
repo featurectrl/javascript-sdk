@@ -1,0 +1,26 @@
+{
+  "name": "@featurectrl/javascript-sdk",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "test": "bun test",
+    "typecheck": "bun run --filter '*' typecheck",
+    "clean": "rm -rf packages/*/dist packages/*/*.tsbuildinfo",
+    "lint": "biome check .",
+    "format": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@types/bun": "^1.3.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.5.0"
+  }
+}

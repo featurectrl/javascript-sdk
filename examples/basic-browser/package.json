@@ -1,0 +1,21 @@
+{
+  "name": "@featurectrl/example-basic-browser",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@featurectrl/browser": "workspace:*"
+  },
+  "devDependencies": {
+    "@featurectrl/cli": "workspace:*",
+    "@featurectrl/config": "workspace:*",
+    "@tailwindcss/vite": "^4.2.4",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  }
+}

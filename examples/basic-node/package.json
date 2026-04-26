@@ -1,0 +1,17 @@
+{
+  "name": "@featurectrl/example-basic-node",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@featurectrl/node": "workspace:*"
+  },
+  "devDependencies": {
+    "@featurectrl/cli": "workspace:*",
+    "@featurectrl/config": "workspace:*"
+  }
+}
