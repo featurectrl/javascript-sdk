@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "featurectrl config",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/featurectrl/javascript-sdk.git",
+    "directory": "packages/config"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -21,7 +26,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "sideEffects": false,
   "scripts": {
@@ -32,5 +38,9 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }

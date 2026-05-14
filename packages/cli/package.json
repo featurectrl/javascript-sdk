@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "featurectrl command line tool",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/featurectrl/javascript-sdk.git",
+    "directory": "packages/cli"
+  },
   "type": "module",
   "bin": {
     "featurectrl": "./dist/index.js"
@@ -24,5 +29,9 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }

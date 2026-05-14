@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "featurectrl Node.js SDK",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/featurectrl/javascript-sdk.git",
+    "directory": "packages/node"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -46,5 +51,9 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
